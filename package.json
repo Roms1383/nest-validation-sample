@@ -1,0 +1,50 @@
+{
+  "name": "nest-validation-sample",
+  "version": "1.0.0",
+  "author": "Romain KELIFA <romain.kelifa@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "description": "Nest sample for Joiful/Joi validation with Pipe",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {
+    "@hapi/joi": "15.1.1",
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/core": "^7.0.0",
+    "joiful": "^2.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.0.0",
+    "@nestjs/platform-express": "^7.0.6",
+    "@nestjs/schematics": "^7.0.0",
+    "@nestjs/testing": "^7.0.0",
+    "@types/express": "^4.17.2",
+    "@types/hapi__joi": "15.0.3",
+    "@types/jest": "25.1.2",
+    "@types/node": "^13.1.6",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jest": ">=25.0.0 <26.0.0",
+    "ts-jest": "25.2.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^7.0.0"
+  }
+}
